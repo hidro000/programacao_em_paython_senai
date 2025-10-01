@@ -1,0 +1,22 @@
+# cliente_1,idade_1 = input('nome: '),input('idade: ')
+# cliente_2,idade_2 = input('nome: '),input('idade: ')
+# cliente_3,idade_3 = input('nome: '),input('idade: ')
+# print('escolha um quarto')
+# quartos = ['','simples', 'duplo', 'luxo']
+# diarias = [0,100.00,150.00,200.00]
+# print(quartos)
+# print(diarias)
+# cliente1_dias = int(input('dias - '))
+# cliente2_dias = int(input('dias - '))
+# cliente3_dias = int(input('dias - '))
+
+# cliente1_quarto =int(input('id quarto'))
+# cliente2_quarto =int(input('id quarto'))
+# cliente3_quarto =int(input('id quarto'))
+
+# calculo_1 = cliente1_dias * diarias[cliente1_quarto]
+# calculo_2 = cliente2_dias * diarias[cliente2_quarto]
+# calculo_3 = cliente3_dias * diarias[cliente3_quarto]
+# print('total cliente 1 R$, ', calculo_1)
+# print('total cliente 2 R$, ', calculo_2)
+# print('total cliente 3 R$, ', calculo_3)
