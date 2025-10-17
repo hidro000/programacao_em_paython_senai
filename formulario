@@ -1,0 +1,61 @@
+import tkinter as tk
+def display():
+    nome=input_nome.get()
+    print('nome:',nome)
+    idade=input_idade.get()
+    print('idade:',idade)
+    email=input_email.get()
+    print('email:',email)
+    endereço=input_endereço.get()
+    print('endereço:',endereço)
+    celular=input_celular.get()
+    print('celular:',celular)
+
+
+janela = tk.Tk()
+janela.geometry('1700x750')
+
+
+texto = tk.Label(janela, text = 'Formulário', font=('arial', 20), fg = 'black')
+texto.pack(pady= 70)
+
+
+text2 = tk.Label(janela, text= 'nome', font=('arial', 15), fg='black')
+text2.pack(pady=10, padx=10)
+
+input_nome = tk.Entry(janela, font = ('arial', 15), bg = 'white', fg = 'black')
+input_nome.pack(padx=20)
+
+text3 = tk.Label(janela, text= 'idade', font=('arial', 15), fg='black')
+text3.pack(pady=10, padx=10)
+
+
+input_idade = tk.Entry(janela, font = ('arial', 15), bg = 'white', fg = 'black')
+input_idade.pack(padx=20)
+
+text4 = tk.Label(janela, text= 'e-mail', font=('arial', 15), fg='black')
+text4.pack(pady=10, padx=10)
+
+
+input_email = tk.Entry(janela, font = ('arial', 15), bg = 'white', fg = 'black')
+input_email.pack(padx=20)
+
+text5 = tk.Label(janela, text= 'endereço', font=('arial', 15), fg='black')
+text5.pack(pady=10, padx=10)
+
+
+input_endereço = tk.Entry(janela, font = ('arial', 15), bg = 'white', fg = 'black')
+input_endereço.pack(padx=20)
+
+text6 = tk.Label(janela, text= 'celular', font=('arial', 15), fg='black')
+text6.pack(pady=10, padx=10)
+
+
+input_celular = tk.Entry(janela, font = ('arial', 15), bg = 'white', fg = 'black')
+input_celular.pack(padx=20)
+
+
+btn =  tk.Button(janela, text = 'enviar', command=display)
+btn.pack(pady=10, padx=10)
+
+janela.mainloop()
