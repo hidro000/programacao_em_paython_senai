@@ -1,0 +1,35 @@
+
+# # # # ATIVIDADE 2
+
+# # # Você foi contratado para analisar o desempenho de um grupo de alunos em uma disciplina, você vai analisar apenas pela média. As notas de cada aluno em diferentes provas estão armazenadas em listas. O objetivo é usar listas bidimensionais para representar as notas de cada aluno e realizar algumas análises básicas, como:
+
+# # # Calcular a média das notas de cada aluno.
+# # # Identificar o aluno com a maior média.
+# # # Calcular a média da classe (média geral de todos)
+
+# # # notas = [[10,10,10],[5,2,3],[5,9,8],[10,0,6]] 
+
+# # # nomes = ['Ana','Fernanda', 'Caio', 'Fernando']
+
+
+notas = [[10, 10, 10], [5, 2, 3], [5, 9, 8], [10, 0, 6]]
+nomes = ['Ana', 'Fernanda', 'Caio', 'Fernando']
+
+
+def calcular_media_aluno(notas_aluno):
+    return sum(notas_aluno) / len(notas_aluno)
+
+
+medias = list(map(calcular_media_aluno, notas))
+
+
+indice_max_media = medias.index(max(medias))
+aluno_maior_media = nomes[indice_max_media]
+
+
+media_geral = sum(medias) / len(medias)
+
+
+print(f'Médias dos alunos: {medias}')
+print(f'Aluno com a maior média: {aluno_maior_media} - Média: {medias[indice_max_media]}')
+print(f'Média geral da classe: {media_geral}')
