@@ -1,0 +1,15 @@
+def display():
+    nome = input('Digite o nome:')
+    sobrenome = input('Digite o sobrenome')
+    print(nome, sobrenome)
+
+
+def imc():
+    altura =  float(input('Altura: '))
+    peso = float(input('Peso: '))
+    imc  =  peso / altura**2
+    print(imc)    
+
+
+display()
+imc()
